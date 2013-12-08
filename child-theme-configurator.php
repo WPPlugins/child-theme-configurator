@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
     Plugin Name: Child Theme Configurator
     Plugin URI: http://www.lilaeamedia.com/plugins/child-theme-configurator/
     Description: Create Child Theme from any Theme or Stylesheet
-    Version: 1.0.1
+    Version: 1.1.0
     Author: Lilaea Media
     Author URI: http://www.lilaeamedia.com/
     Text Domain: chld_thm_cfg
@@ -15,7 +15,6 @@ if ( !defined('ABSPATH')) exit;
     Copyright (C) 2013 Lilaea Media
 */
 
-    defined('CHLD_THM_CFG_NS') or define('CHLD_THM_CFG_NS', 'chld_thm_cfg');
     defined('LF') or define('LF', "\n");
 
     require_once( 'includes/class-ctc.php' );
