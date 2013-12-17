@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: child theme, custom theme, CSS, responsive design, CSS editor, theme generator
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,26 @@ Why create Child Themes using the Child Theme Configurator?
 3. Activate the plugin through the 'Plugins' menu in WordPress
    
 == Frequently Asked Questions ==
+
+= Where is it in the Admin? =
+
+The Child Theme Configurator can be found under the "Tools" menu in the WordPress Admin. Click "Child Themes" to get started. 
+
+Click the "Help" tab at the top right for a quick reference.
+
+= Where are the styles? The configurator doesn't show anything! =
+
+All of the styles are loaded dynamically. You must start typing in the text boxes to select styles to edit.
+
+"Base" is the query group that contains styles that are not associated with any particular "At-rule."
+
+Start by clicking the "Query/Selector" tab and typing "base" in the first box. You can then start typing in the second box to retrieve the style selectors to edit.
+
+= If the parent theme changes (e.g., upgrade), do I have to update the child theme? =
+
+No. This is the point of using child themes. Changes to the parent theme are automatically inherited by the child theme.
+
+A child theme is not a "copy" of the parent theme. It is a special feature of WordPress that let's you override specific styles and functions leaving the rest of the theme intact. The only time you need to make changes after an upgrade is if the parent removes or changes style or function names. Quality themes should identify any deprecated functions or styles in the upgrade notes so that child theme users can make adjustments accordingly.
 
 = Where is the functions.php file? =
 
@@ -89,6 +109,9 @@ You can also create a secondary stylesheet that contains @font-face rules and im
 
 == Changelog ==
 
+= 1.1.4 =
+* Fixed sort bug in shorthand parser that was returning rules in wrong order
+
 = 1.1.3 = 
 * Fixed bug that assumed lowercase only for theme slugs. (Thanks to timk)
 * Fixed update redirect to execute on first run
@@ -121,6 +144,9 @@ You can also create a secondary stylesheet that contains @font-face rules and im
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+* Fixed sort bug in shorthand parser that was returning rules in wrong order
 
 = 1.1.1 =
 * This release fixes a major bug that caused input values containing '0' to be ignored
