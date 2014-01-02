@@ -2,9 +2,9 @@
 Contributors: lilaeamedia
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QE5YJ8WE96AJ
 Tags: child theme, custom theme, CSS, responsive design, CSS editor, theme generator
-Requires at least: 3.5
+Requires at least: 3.7
 Tested up to: 3.8
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,10 @@ Why create Child Themes using the Child Theme Configurator?
 3. Activate the plugin through the 'Plugins' menu in WordPress
    
 == Frequently Asked Questions ==
+
+= Is there a tutorial? =
+
+http://www.youtube.com/watch?v=xL2HkWQxgOA
 
 = Where is it in the Admin? =
 
@@ -113,6 +117,9 @@ You can also create a secondary stylesheet that contains @font-face rules and im
 
 == Changelog ==
 
+= 1.1.7 =
+* Added tutorial video to help tabs.
+
 = 1.1.6 =
 * Added call to reset_updates() before update_option() to prevent serialization errors.
 
@@ -176,7 +183,7 @@ The first step is to create a child theme and import your parent theme styles in
 
 1. Select an existing parent theme from the menu.
 2. Select "New" or "Existing" child theme.
-    * If creating a new theme, enter a "slug" (lower case, no spaces). This is used to name the theme directory and identify the theme to WordPress.</li>
+    * If creating a new theme, enter a "slug" (lower case, no spaces). This is used to name the theme directory and identify the theme to WordPress.
     * If using an existing theme, select a child theme from the menu.
 3. Enter a Name for the child theme.
 4. Enter an author for the child theme.
@@ -237,3 +244,5 @@ Click the Preview CSS tab to see your new masterpiece as CSS code. To preview th
 == Documentation ==
 
 Go to http://www.lilaeamedia.com/plugins/child-theme-configurator
+
+Copyright: (C) 2014 Lilaea Media
