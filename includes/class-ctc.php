@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
     Class: Child_Theme_Configurator
     Plugin URI: http://www.lilaeamedia.com/plugins/child-theme-configurator/
     Description: Main Controller Class
-    Version: 1.2.2
+    Version: 1.2.3
     Author: Lilaea Media
     Author URI: http://www.lilaeamedia.com/
     Text Domain: chld_thm_cfg
@@ -18,7 +18,7 @@ require_once('class-ctc-ui.php');
 require_once('class-ctc-css.php');
 class Child_Theme_Configurator {
 
-    var $version = '1.2.2';
+    var $version = '1.2.3';
     var $css;
     var $optionsName;
     var $menuName;
@@ -46,7 +46,7 @@ class Child_Theme_Configurator {
         $this->pluginURL    = plugin_dir_url($file);
 
         // setup plugin hooks
-        add_action('admin_menu', array(&$this, 'admin_menu'));
+        add_action('admin_menu',            array(&$this, 'admin_menu'));
         add_action('admin_enqueue_scripts', array(&$this, 'enqueue_scripts'));
         add_action('wp_ajax_ctc_update',    array(&$this, 'ajax_save_postdata' ));
         add_action('wp_ajax_ctc_query',     array(&$this, 'ajax_query_css' ));
